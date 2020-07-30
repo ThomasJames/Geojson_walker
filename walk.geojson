@@ -29,4 +29,4 @@
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-122.76817,47.78667,18.68]},"properties":{"mag":0.44,"place":"8km WSW of Lofall, Washington","time":1560949630890,"title":"M 0.4 - 8km WSW of Lofall, Washington","depth":18.68}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-147.6844,60.5416,16.5]},"properties":{"mag":1.6,"place":"60km ESE of Whittier, Alaska","time":1560949612016,"title":"M 1.6 - 60km ESE of Whittier, Alaska","depth":16.5}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-120.475,35.92683,4.84]},"properties":{"mag":1.99,"place":"5km NW of Parkfield, CA","time":1560949605900,"title":"M 2.0 - 5km NW of Parkfield, CA","depth":4.84}}
-}
+]}
