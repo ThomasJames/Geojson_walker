@@ -7,7 +7,7 @@
 {"type":"Feature","geometry":{"type":"Point","coordinates":[8.250802,46.982226]},"properties":{"place": 'place' ,"el":7,"time": 1598349900000,"depth":1}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[8.250861,46.982127]},"properties":{"place": 'place' ,"el":7,"time": 1598349960000,"depth":1}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[8.250817,46.982011]},"properties":{"place": 'place' ,"el":7,"time": 1598350020000,"depth":1}},
-{"type":"Feature","geometry":{"type":"Point","coordinates":[8.250748,46.98191]},"properties": {"place": 'place' ,"el":4,"time":  1598350080000,"depth":11}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[8.250748,46.981911]},"properties": {"place": 'place' ,"el":4,"time": 1598350080000,"depth":11}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[8.250754,46.981805]},"properties":{"place": 'place' ,"el":7,"time": 1598350140000,"depth":1}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[8.250774,46.981793]},"properties":{"place": 'place' ,"el":7,"time": 1598350200000,"depth":1}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[8.250768,46.981708]},"properties":{"place": 'place' ,"el":7,"time": 1598350260000,"depth":1}},
