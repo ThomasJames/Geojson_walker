@@ -1,4 +1,4 @@
-'route', {
+{'route', {
     'type': 'geojson',
     'data': {
         'type': 'Feature',
@@ -126,4 +126,4 @@
                 [8.2542, 46.979817]
             ]
         }
-    }}
+    }}}
