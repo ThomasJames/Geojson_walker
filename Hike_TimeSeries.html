@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -8,6 +9,11 @@
   <title>
     Filter features with TimeSlider | Sample | ArcGIS API for JavaScript 4.16
   </title>
+
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+  <title>Measure Tool</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/3.33/esri/themes/calcite/dijit/calcite.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/3.33/esri/themes/calcite/esri/esri.css">
 
   <style>
     html,
@@ -27,7 +33,7 @@
     }
 
     #infoDiv {
-      height: 200px;
+      height: 250px;
       padding: 10px;
       width: 280px;
     }
@@ -55,11 +61,46 @@
       "esri/Map",
       "esri/views/SceneView",
       "esri/widgets/Search",
-      "esri/views/SceneView"
+      "esri/views/SceneView",
+      "esri/widgets/Compass",
+      "esri/widgets/Measurement",
+      "esri/layers/FeatureLayer",
+      "esri/widgets/Legend",
+      "esri/widgets/DistanceMeasurement2D",
+      "esri/widgets/AreaMeasurement2D",
+      "esri/widgets/Sketch",
+      "esri/Map",
+      "esri/layers/GraphicsLayer",
+      "esri/views/MapView",
+      "esri/symbols/SimpleMarkerSymbol",
+      "esri/core/urlUtils"
 
-    ], function (Map, MapView, GeoJSONLayer, TimeSlider, Expand, Legend, SceneView, ElevationLayer) {
-      let layerView;
 
+    ], function (Map,
+                 MapView,
+                 GeoJSONLayer,
+
+                 TimeSlider,
+                 Expand,
+                 Legend,
+
+                 urlUtils,
+                 Sketch,
+                 GraphicsLayer,
+                 Compass,
+                 Search,
+                 Measurement,
+                 FeatureLayer,
+                 DistanceMeasurement2D,
+                 AreaMeasurement2D,
+                 SimpleMarkerSymbol) {
+
+
+      var url = "https://github.com/ThomasJames/Geojson_walker/blob/master/test_lineString.geojson";
+
+      const layer_2 = new GeoJSONLayer({
+        url: url,
+      });
 
 
       const layer = new GeoJSONLayer({
@@ -69,201 +110,121 @@
           startField: "time", // name of the date field
           interval: {
             // set time interval to one day
-            unit: "hours",
-            value: 3
+            unit: "seconds",
+            value: 0.01
           }
         },
         renderer: {
           type: "simple",
-          field: "el",
+          field: "elevation",
           symbol: {
             type: "simple-marker",
             color: "orange",
-            outline: null
+            outline: null,
+            label: "Data Point"
           },
           visualVariables: [
             {
-              type: "size",
-              field: "el",
-              stops: [
-                {
-                  value: 1,
-                  size: "3px"
+                  type: "size",
+                  field: "CaloriesBurned",
+                  stops: [
+                    {
+                      value: 2.0,
+                      size: "3px"
+                    },
+                    {
+                      value: 2.1,
+                      size: "4px"
+                    },
+                    {
+                      value: 2.2,
+                      size: "5px"
+                    },
+                    {
+                      value: 2.3,
+                      size: "7px"
+                    },
+                    {
+                      value: 2.4,
+                      size: "9px"
+                    },
+                    {
+                      value: 2.5,
+                      size: "11px"
+                    },
+                    {
+                      value: 2.6,
+                      size: "15px"
+                    },
+                    {
+                      value: 2.7,
+                      size: "17px"
+                    },
+                  ]
                 },
                 {
-                  value: 2,
-                  size: "5px"
-                },
-                {
-                  value: 3,
-                  size: "7px"
-                }
-              ]
-            },
-            {
               type: "color",
-              field: "el",
+              field: "HeartRate",
               stops: [
                 {
                   value: 100,
                   color: "#fffdd0",
-                  label: "<2km"
-                },
-                {
-                  value: 101,
-                  color: "#fffdd0",
-                  label: "3km"
-                },
-                {
-                  value: 102,
-                  color: "#fffdd0",
-                  label: ">4km"
-                },
-                {
-                  value: 103,
-                  color: "#fffdd0",
-                  label: "<2km"
-                },
-                {
-                  value: 104,
-                  color: "#fffdd0",
-                  label: "3km"
-                },
-                {
-                  value: 105,
-                  color: "#fffdd0",
-                  label: ">4km"
-                },
-                {
-                  value: 106,
-                  color: "#F8864D",
-                  label: "<2km"
-                },
-                {
-                  value: 107,
-                  color: "#F8864D",
-                  label: "3km"
-                },
-                {
-                  value: 108,
-                  color: "#F8864D",
-                  label: ">4km"
-                },
-                {
-                  value: 108,
-                  color: "#F8864D",
-                  label: "<2km"
-                },
-                {
-                  value: 109,
-                  color: "#F8864D",
-                  label: "3km"
-                },
-                {
-                  value: 110,
-                  color: "#F8864D",
-                  label: ">4km"
-                },
-                {
-                  value: 111,
-                  color: "#F8864D",
-                  label: "<2km"
-                },
-                {
-                  value: 112,
-                  color: "#F8864D",
-                  label: "3km"
-                },
-                {
-                  value: 113,
-                  color: "#F8864D",
-                  label: ">4km"
-                },
-                {
-                  value: 114,
-                  color: "#F8864D",
-                  label: "<2km"
+                  label: "<100bpm"
                 },
                 {
                   value: 115,
                   color: "#F8864D",
-                  label: "3km"
-                },
-                {
-                  value: 116,
-                  color: "#C53C06",
-                  label: ">4km"
-                },
-                {
-                  value: 117,
-                  color: "#C53C06",
-                  label: "<2km"
-                },
-                {
-                  value: 118,
-                  color: "#C53C06",
-                  label: "3km"
-                },
-                {
-                  value: 119,
-                  color: "#C53C06",
-                  label: ">4km"
+                  label: "110 - 115bmp"
                 },
                 {
                   value: 120,
                   color: "#C53C06",
-                  label: "<2km"
-                },
-                {
-                  value: 121,
-                  color: "#C53C06",
-                  label: "3km"
+                  label: "115bpm +"
                 }
               ]
             }
           ]
         },
-          popupTemplate: {
-            title: "{title}",
-            content: [
-              {
-                type: "fields",
-                fieldInfos: [
-                  {
-                    fieldName: "place",
-                    label: "Location",
-                    visible: true
-                  },
-                  {
-                    fieldName: "mag",
-                    label: "Magnitude",
-                    visible: true
-                  },
-                  {
-                    fieldName: "depth",
-                    label: "Depth",
-                    visible: true
-                  }
-                ]
-              }
-            ]
-          }
+        popupTemplate: {
+          title: "{title}",
+          content: [
+            {
+              type: "fields",
+              fieldInfos: [
+                {
+                  fieldName: "place",
+                  label: "Location",
+                  visible: true
+                },
+                {
+                  fieldName: "elevation",
+                  label: "Elevation",
+                  visible: true
+                },
+                {
+                  fieldName: "HeartRate",
+                  label: "HeartRate",
+                  visible: true
+                }
+              ]
+            }
+          ]
+        }
 
       });
 
       const map = new Map({
         basemap: "satellite",
-        ground: "world-elevation",
-        layers: [layer]
+        layers: [layer, layer_2]
       });
-
-
+      
       var view = new MapView({
         map: map,
         scale: 123456789,
         container: "viewDiv",
         zoom: 17,
-        center: [8.250732, 46.982330]
+        center: [8.250732, 46.982330],
+        
       });
 
 
@@ -273,11 +234,11 @@
       // data falls within time range
       const timeSlider = new TimeSlider({
         container: "timeSlider",
-        container: "timeSlider",
         mode: "time-window",
         view: view
       });
       view.ui.add(timeSlider, "manual");
+
 
       // wait till the layer view is loaded
       view.whenLayerView(layer).then(function (lv) {
@@ -290,18 +251,17 @@
         timeSlider.fullTimeExtent = {
           start: start,
           end: layer.timeInfo.fullTimeExtent.end,
-          playRate: 100,
-          step: 10,
+          playRate: 0.1,
+          step: 1,
           stops: {
             interval: {
-              value: 5,
+              value: 0.1,
               unit: "minutes"
             }
           }
         };
         console.log(timeSlider.fullTimeExtent.start, timeSlider.fullTimeExtent.end)
-        timeSlider.setThumbMovingRate(2);
-        timeSlider.setThumbMovingRate(2000);
+
 
         // We will be showing earthquakes with one day interval
         // when the app is loaded we will show earthquakes that
@@ -314,22 +274,10 @@
         // Values property is set so that timeslider
         // widget show the first day. We are setting
         // the thumbs positions.
-        // var START = new Date(2020, 7, 20);
-        // var END = new Date(2020, 7, 26);
-        //
-        // console.log(START, END)
 
         timeSlider.values = [start, end];
       });
 
-      function diff_minutes(dt2, dt1)
-      {
-        var diff =(dt2.getTime() - dt1.getTime()) / 1000;
-        diff /= 60;
-        return Math.abs(Math.round(diff));
-      }
-
-      console.log("The start time is: ", layer.time)
 
 
       // watch for time slider timeExtent change
@@ -355,7 +303,10 @@
           magAvg,
           magMin,
           tremorCount,
-          avgDepth
+          avgDepth,
+          elChange,
+          calories
+
         ];
 
         layer
@@ -373,24 +324,18 @@
                           const html =
                                   "<br/>" +
                                   statsFields[name] +
-                                  ": <b><span> " +
+                                  ": <span> " +
                                   attributes[name].toFixed(2) +
-                                  "</span></b>";
+                                  "</span>";
                           htmls.push(html);
                         }
                       }
-                      var yearHtml =
-                              "<span>" +
-                              result.features[0].attributes["tremor_count"] +
-                              "</span>  Hike took place on the:  " +
-                              timeSlider.timeExtent.end.toLocaleDateString() +
-                              ".<br/>";
-
+                      var yearHtml = '<P><B>Hike Statistics: </B></P>'
                       if (htmls[0] == undefined) {
                         statsDiv.innerHTML = yearHtml;
                       } else {
                         statsDiv.innerHTML =
-                                yearHtml + htmls[0] + htmls[1] + htmls[2] + htmls[3];
+                                yearHtml + htmls[0] + htmls[1] + htmls[2] + htmls[3] + htmls[4];
                       }
                     }
                   }
@@ -400,44 +345,54 @@
                 });
       });
 
+      const calories = {
+        onStatisticField: 'CaloriesBurned',
+        outStatisticFieldName: "calories_burned",
+        statisticType: "count"
+      };
 
-
+      const elChange = {
+        onStatisticField: "HeartRate",
+        outStatisticFieldName: "elevation_change",
+        statisticType: "count"
+      };
 
       const avgDepth = {
-        onStatisticField: "depth",
+        onStatisticField: "elevation",
         outStatisticFieldName: "Average_depth",
         statisticType: "avg"
       };
 
       const magMax = {
-        onStatisticField: "el",
+        onStatisticField: "HeartRate",
         outStatisticFieldName: "Max_magnitude",
         statisticType: "max"
       };
 
       const magAvg = {
-        onStatisticField: "el",
+        onStatisticField: "HeartRate",
         outStatisticFieldName: "Average_magnitude",
         statisticType: "avg"
       };
 
       const magMin = {
-        onStatisticField: "el",
+        onStatisticField: "HeartRate",
         outStatisticFieldName: "Min_magnitude",
         statisticType: "min"
       };
 
       const tremorCount = {
-        onStatisticField: "el",
+        onStatisticField: "HeartRate",
         outStatisticFieldName: "tremor_count",
         statisticType: "count"
       };
 
       const statsFields = {
-        Max_magnitude: "Maximum Heart Rate",
-        Average_magnitude: "Average Heart Rate",
-        Min_magnitude: "Min Heart Rate",
-        Average_depth: "Elevation (m)"
+        Max_magnitude: "Max Heart-rate (m)",
+        Average_magnitude: "Average Heart-rate (m)",
+        Min_magnitude: "Minimum Heart-rate, (m)",
+        elevation_change: "Elevation increase (m)",
+        calories_burned: "Calories Burned (j)"
       };
 
       // add a legend for the earthquakes layer
@@ -465,27 +420,28 @@
       });
       view.ui.add(infoDivExpand, "top-right");
 
-      console.log(queryElevation(map.position))
 
     });
 
 
 
 
-
-
     // MEASUREMENT TOOL.
-    // https://developers.arcgis.com/javascript/3/sandbox/sandbox.html?sample=widget_measurement
+    // Search Widget
+    // Scale Bar
+    // Compass
+    // Line
+    // Other data layers.
   </script>
-</head>
+  </head>
+  <body>
+  <div id="viewDiv"></div>
+  <div id="timeSlider"></div>
+  <div id="infoDiv" class="esri-widget">
+    <div><b>Mount Pilatus Hike</b></div>
+    <br />
+    <div id="statsDiv" class="esri-widget"></div>
+  </body>
 
-<body>
-<div id="viewDiv"></div>
-<div id="timeSlider"></div>
-<div id="infoDiv" class="esri-widget">
-  <div><b>Mount Pilatus Hike</b></div>
-  <br />
-  <div id="statsDiv" class="esri-widget"></div>
-</div>
-</body>
+
 </html>
