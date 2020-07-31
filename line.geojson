@@ -1,6 +1,7 @@
 {"type": "FeatureCollection",
  "features": [
-     {"type": "Feature",
+     {"type": "Feature", 
+      "properties": {"time": 1598351220},
       "geometry": {
           "type": "LineString",
           "coordinates": [
@@ -120,6 +121,8 @@
                 [8.253867, 46.979795],
                 [8.254200, 46.979817]
             ]
-        }
+        } 
     }]
  }
+
+
