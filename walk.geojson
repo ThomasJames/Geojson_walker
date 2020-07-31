@@ -103,8 +103,85 @@
 {"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251904, 46.979544]},"properties":{"place": 1, "elevation": 2065, "time":1598355780000, "HeartRate":121}},
 {"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251866, 46.979438]},"properties":{"place": 1, "elevation": 2065, "time":1598355840000, "HeartRate":121}},
 {"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251818, 46.979350]},"properties":{"place": 1, "elevation": 2065, "time":1598355900000, "HeartRate":122}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251751, 46.979262]},"properties":{"place": 1, "elevation": 2066, "time":1598355960000, "HeartRate":122}}
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251751, 46.979262]},"properties":{"place": 1, "elevation": 2066, "time":1598355960000, "HeartRate":122}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251786, 46.979222]},"properties":{"place": 1, "elevation": 2068, "time":1598356080000, "HeartRate":122}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251950, 46.979275]},"properties":{"place": 1, "elevation": 2068, "time":1598356140000, "HeartRate":122}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.252130, 46.979262]},"properties":{"place": 1, "elevation": 2068, "time":1598356200000, "HeartRate":120}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.252730, 46.979399]},"properties":{"place": 1, "elevation": 2068, "time":1598356260000, "HeartRate":119}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.252934, 46.979516]},"properties":{"place": 1, "elevation": 2068, "time":1598356320000, "HeartRate":118}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.253320, 46.979670]},"properties":{"place": 1, "elevation": 2069, "time":1598356380000, "HeartRate":117}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.253631, 46.979736]},"properties":{"place": 1, "elevation": 2070, "time":1598356440000, "HeartRate":111}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.253867, 46.979795]},"properties":{"place": 1, "elevation": 2071, "time":1598356500000, "HeartRate":111}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.254200, 46.979818]},"properties":{"place": 1, "elevation": 2071, "time":1598356560000, "HeartRate":112}}
 ]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
