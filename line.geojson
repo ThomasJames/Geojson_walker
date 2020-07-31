@@ -1,11 +1,9 @@
-{'route', {
-    'type': 'geojson',
-    'data': {
-        'type': 'Feature',
-        'properties': {},
-        'geometry': {
-            'type': 'LineString',
-            'coordinates': [
+{"type": "FeatureCollection",
+ "features": [
+     {"type": "Feature",
+      "geometry": {
+          "type": "LineString",
+          "coordinates": [
                 [8.250772, 46.982499],
                 [8.250772, 46.982391],
                 [8.250802, 46.982291],
@@ -126,6 +124,6 @@
                 [8.254200, 46.979817]
             ]
         }
-    }
-}
+    }]
+ }
 
