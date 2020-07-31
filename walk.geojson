@@ -1,107 +1,174 @@
 {"type":"FeatureCollection", "features": [
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250772, 46.982499]},"properties":{"place": 1, "elevation": 1867, "time":1598349660000, "HeartRate":100}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250772, 46.982391]},"properties":{"place": 1, "elevation": 1868, "time":1595671270000, "HeartRate":101}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250802, 46.982291]},"properties":{"place": 1, "elevation": 1869, "time":1595671280000, "HeartRate":108}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250802, 46.982226]},"properties":{"place": 1, "elevation": 1873, "time":1593885690000, "HeartRate":105}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250802, 46.982226]},"properties":{"place": 1, "elevation": 1874, "time":1592546500000, "HeartRate":102}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250861, 46.982127]},"properties":{"place": 1, "elevation": 1875, "time":1591207310000, "HeartRate":101}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250817, 46.982011]},"properties":{"place": 1, "elevation": 1876, "time":1589868120000, "HeartRate":101}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250748, 46.981910]},"properties":{"place": 1, "elevation": 1877, "time":1588528930000, "HeartRate":110}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250754, 46.981805]},"properties":{"place": 1, "elevation": 1878, "time":1587189740000, "HeartRate":120}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250774, 46.981793]},"properties":{"place": 1, "elevation": 1879, "time":1585850550000, "HeartRate":120}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250768, 46.981708]},"properties":{"place": 1, "elevation": 1880, "time":1584511360000, "HeartRate":120}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250718, 46.981624]},"properties":{"place": 1, "elevation": 1881, "time":1583172170000, "HeartRate":119}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250677, 46.981556]},"properties":{"place": 1, "elevation": 1882, "time":1581832980000, "HeartRate":119}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250668, 46.981483]},"properties":{"place": 1, "elevation": 1883, "time":1580493790000, "HeartRate":119}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250638, 46.981362]},"properties":{"place": 1, "elevation": 1890, "time":1579154600000, "HeartRate":118}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250639, 46.981265]},"properties":{"place": 1, "elevation": 1891, "time":1577815410000, "HeartRate":118}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250672, 46.981206]},"properties":{"place": 1, "elevation": 1892, "time":1576476220000, "HeartRate":118}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250728, 46.981228]},"properties":{"place": 1, "elevation": 1893, "time":1575137030000, "HeartRate":118}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250723, 46.981259]},"properties":{"place": 1, "elevation": 1894, "time":1573797840000, "HeartRate":117}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250736, 46.981275]},"properties":{"place": 1, "elevation": 1906, "time":1572458650000, "HeartRate":117}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250765, 46.981297]},"properties":{"place": 1, "elevation": 1907, "time":1571119460000, "HeartRate":117}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250819, 46.981298]},"properties":{"place": 1, "elevation": 1908, "time":1569780270000, "HeartRate":116}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250806, 46.981185]},"properties":{"place": 1, "elevation": 1909, "time":1568441080000, "HeartRate":116}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250797, 46.981125]},"properties":{"place": 1, "elevation": 1910, "time":1567101890000, "HeartRate":116}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250763, 46.981072]},"properties":{"place": 1, "elevation": 1911, "time":1565762700000, "HeartRate":115}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250733, 46.980989]},"properties":{"place": 1, "elevation": 1912, "time":1564423510000, "HeartRate":115}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250729, 46.980905]},"properties":{"place": 1, "elevation": 1913, "time":1563084320000, "HeartRate":115}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250714, 46.980838]},"properties":{"place": 1, "elevation": 1914, "time":1561745130000, "HeartRate":115}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250697, 46.980761]},"properties":{"place": 1, "elevation": 1915, "time":1560405940000, "HeartRate":114}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250697, 46.980693]},"properties":{"place": 1, "elevation": 1916, "time":1559066750000, "HeartRate":114}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250675, 46.980629]},"properties":{"place": 1, "elevation": 1917, "time":1557727560000, "HeartRate":114}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250679, 46.980552]},"properties":{"place": 1, "elevation": 1936, "time":1556388370000, "HeartRate":113}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250654, 46.980463]},"properties":{"place": 1, "elevation": 1937, "time":1555049180000, "HeartRate":113}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250611, 46.980397]},"properties":{"place": 1, "elevation": 1938, "time":1553709990000, "HeartRate":113}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250587, 46.980308]},"properties":{"place": 1, "elevation": 1939, "time":1552370800000, "HeartRate":112}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250554, 46.980268]},"properties":{"place": 1, "elevation": 1940, "time":1551031610000, "HeartRate":112}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250569, 46.980211]},"properties":{"place": 1, "elevation": 1941, "time":1549692420000, "HeartRate":112}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250607, 46.980213]},"properties":{"place": 1, "elevation": 1942, "time":1548353230000, "HeartRate":112}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250706, 46.980286]},"properties":{"place": 1, "elevation": 1943, "time":1547014040000, "HeartRate":111}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250781, 46.980323]},"properties":{"place": 1, "elevation": 1944, "time":1545674850000, "HeartRate":111}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250805, 46.980307]},"properties":{"place": 1, "elevation": 1961, "time":1544335660000, "HeartRate":111}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250797, 46.980259]},"properties":{"place": 1, "elevation": 1962, "time":1542996470000, "HeartRate":110}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250773, 46.980228]},"properties":{"place": 1, "elevation": 1963, "time":1541657280000, "HeartRate":110}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250757, 46.980197]},"properties":{"place": 1, "elevation": 1964, "time":1540318090000, "HeartRate":110}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250746, 46.980175]},"properties":{"place": 1, "elevation": 1965, "time":1538978900000, "HeartRate":109}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250794, 46.980164]},"properties":{"place": 1, "elevation": 1966, "time":1537639710000, "HeartRate":109}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250864, 46.980198]},"properties":{"place": 1, "elevation": 1967, "time":1536300520000, "HeartRate":109}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250939, 46.980236]},"properties":{"place": 1, "elevation": 1981, "time":1534961330000, "HeartRate":109}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251019, 46.980254]},"properties":{"place": 1, "elevation": 1982, "time":1533622140000, "HeartRate":108}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251006, 46.980198]},"properties":{"place": 1, "elevation": 1983, "time":1532282950000, "HeartRate":108}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251006, 46.980198]},"properties":{"place": 1, "elevation": 1984, "time":1530943760000, "HeartRate":108}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250999, 46.980102]},"properties":{"place": 1, "elevation": 1985, "time":1529604570000, "HeartRate":107}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251053, 46.980098]},"properties":{"place": 1, "elevation": 1986, "time":1528265380000, "HeartRate":107}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251107, 46.980157]},"properties":{"place": 1, "elevation": 1986, "time":1526926190000, "HeartRate":107}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251163, 46.980214]},"properties":{"place": 1, "elevation": 1986, "time":1525587000000, "HeartRate":106}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251217, 46.980234]},"properties":{"place": 1, "elevation": 1987, "time":1524247810000, "HeartRate":106}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251265, 46.980225]},"properties":{"place": 1, "elevation": 2011, "time":1522908620000, "HeartRate":106}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251249, 46.980192]},"properties":{"place": 1, "elevation": 2012, "time":1521569430000, "HeartRate":106}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251217, 46.980154]},"properties":{"place": 1, "elevation": 2013, "time":1520230240000, "HeartRate":105}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251182, 46.980099]},"properties":{"place": 1, "elevation": 2014, "time":1518891050000, "HeartRate":105}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251179, 46.980061]},"properties":{"place": 1, "elevation": 2015, "time":1517551860000, "HeartRate":105}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251289, 46.980028]},"properties":{"place": 1, "elevation": 2016, "time":1516212670000, "HeartRate":104}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251243, 46.980043]},"properties":{"place": 1, "elevation": 2017, "time":1514873480000, "HeartRate":104}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251299, 46.980102]},"properties":{"place": 1, "elevation": 2017, "time":1513534290000, "HeartRate":104}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251363, 46.980155]},"properties":{"place": 1, "elevation": 2024, "time":1512195100000, "HeartRate":103}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251422, 46.980137]},"properties":{"place": 1, "elevation": 2025, "time":1510855910000, "HeartRate":103}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251411, 46.980111]},"properties":{"place": 1, "elevation": 2026, "time":1509516720000, "HeartRate":103}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251406, 46.980084]},"properties":{"place": 1, "elevation": 2026, "time":1508177530000, "HeartRate":103}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251390, 46.980042]},"properties":{"place": 1, "elevation": 2026, "time":1506838340000, "HeartRate":102}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251387, 46.980011]},"properties":{"place": 1, "elevation": 2027, "time":1505499150000, "HeartRate":102}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251438, 46.980011]},"properties":{"place": 1, "elevation": 2028, "time":1504159960000, "HeartRate":102}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251484, 46.980057]},"properties":{"place": 1, "elevation": 2029, "time":1502820770000, "HeartRate":101}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251538, 46.980105]},"properties":{"place": 1, "elevation": 2038, "time":1501481580000, "HeartRate":101}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251594, 46.980138]},"properties":{"place": 1, "elevation": 2039, "time":1500142390000, "HeartRate":101}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251621, 46.980131]},"properties":{"place": 1, "elevation": 2039, "time":1498803200000, "HeartRate":100}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251605, 46.980096]},"properties":{"place": 1, "elevation": 2040, "time":1497464010000, "HeartRate":100}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251589, 46.980069]},"properties":{"place": 1, "elevation": 2041, "time":1496124820000, "HeartRate":103}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251577, 46.980048]},"properties":{"place": 1, "elevation": 2041, "time":1494785630000, "HeartRate":105}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251555, 46.980048]},"properties":{"place": 1, "elevation": 2041, "time":1493446440000, "HeartRate":106}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251571, 46.979965]},"properties":{"place": 1, "elevation": 2041, "time":1492107250000, "HeartRate":109}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251639, 46.979985]},"properties":{"place": 1, "elevation": 2042, "time":1490768060000, "HeartRate":111}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251681, 46.980027]},"properties":{"place": 1, "elevation": 2043, "time":1489428870000, "HeartRate":112}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251743, 46.980042]},"properties":{"place": 1, "elevation": 2048, "time":1488089680000, "HeartRate":114}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251719, 46.979993]},"properties":{"place": 1, "elevation": 2049, "time":1486750490000, "HeartRate":116}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251695, 46.979944]},"properties":{"place": 1, "elevation": 2050, "time":1485411300000, "HeartRate":120}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251676, 46.979883]},"properties":{"place": 1, "elevation": 2051, "time":1484072110000, "HeartRate":120}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251665, 46.979834]},"properties":{"place": 1, "elevation": 2052, "time":1482732920000, "HeartRate":120}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251646, 46.979788]},"properties":{"place": 1, "elevation": 2052, "time":1481393730000, "HeartRate":110}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251643, 46.979744]},"properties":{"place": 1, "elevation": 2052, "time":1480054540000, "HeartRate":117}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251713, 46.979803]},"properties":{"place": 1, "elevation": 2052, "time":1478715350000, "HeartRate":118}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251788, 46.979882]},"properties":{"place": 1, "elevation": 2053, "time":1477376160000, "HeartRate":118}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251887, 46.979948]},"properties":{"place": 1, "elevation": 2054, "time":1476036970000, "HeartRate":118}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251981, 46.979997]},"properties":{"place": 1, "elevation": 2055, "time":1474697780000, "HeartRate":118}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.252045, 46.980079]},"properties":{"place": 1, "elevation": 2056, "time":1473358590000, "HeartRate":119}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.252124, 46.980066]},"properties":{"place": 1, "elevation": 2057, "time":1472019400000, "HeartRate":119}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.252096, 46.980004]},"properties":{"place": 1, "elevation": 2057, "time":1470680210000, "HeartRate":119}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.252061, 46.979944]},"properties":{"place": 1, "elevation": 2057, "time":1469341020000, "HeartRate":120}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.252023, 46.979896]},"properties":{"place": 1, "elevation": 2058, "time":1468001830000, "HeartRate":120}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251988, 46.979826]},"properties":{"place": 1, "elevation": 2063, "time":1466662640000, "HeartRate":120}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251961, 46.979727]},"properties":{"place": 1, "elevation": 2064, "time":1465323450000, "HeartRate":120}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251915, 46.979639]},"properties":{"place": 1, "elevation": 2065, "time":1463984260000, "HeartRate":121}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251904, 46.979544]},"properties":{"place": 1, "elevation": 2065, "time":1462645070000, "HeartRate":121}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251866, 46.979438]},"properties":{"place": 1, "elevation": 2065, "time":1461305880000, "HeartRate":121}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251818, 46.979350]},"properties":{"place": 1, "elevation": 2065, "time":1459966690000, "HeartRate":122}},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251751, 46.979262]},"properties":{"place": 1, "elevation": 2066, "time":1458627500000, "HeartRate":122}}
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250772, 46.982499]},"properties":{"place": 1, "elevation": 1867, "time":1598349720000, "HeartRate":100}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250772, 46.982391]},"properties":{"place": 1, "elevation": 1868, "time":1598349780000, "HeartRate":101}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250802, 46.982291]},"properties":{"place": 1, "elevation": 1869, "time":1598349840000, "HeartRate":108}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250802, 46.982226]},"properties":{"place": 1, "elevation": 1873, "time":1598349900000, "HeartRate":105}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250802, 46.982226]},"properties":{"place": 1, "elevation": 1874, "time":1598349960000, "HeartRate":102}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250861, 46.982127]},"properties":{"place": 1, "elevation": 1875, "time":1598350020000, "HeartRate":101}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250817, 46.982011]},"properties":{"place": 1, "elevation": 1876, "time":1598350080000, "HeartRate":101}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250748, 46.981910]},"properties":{"place": 1, "elevation": 1877, "time":1598350140000, "HeartRate":110}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250754, 46.981805]},"properties":{"place": 1, "elevation": 1878, "time":1598350200000, "HeartRate":120}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250774, 46.981793]},"properties":{"place": 1, "elevation": 1879, "time":1598350260000, "HeartRate":120}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250768, 46.981708]},"properties":{"place": 1, "elevation": 1880, "time":1598350320000, "HeartRate":120}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250718, 46.981624]},"properties":{"place": 1, "elevation": 1881, "time":1598350380000, "HeartRate":119}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250677, 46.981556]},"properties":{"place": 1, "elevation": 1882, "time":1598350440000, "HeartRate":119}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250668, 46.981483]},"properties":{"place": 1, "elevation": 1883, "time":1598350500000, "HeartRate":119}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250638, 46.981362]},"properties":{"place": 1, "elevation": 1890, "time":1598350560000, "HeartRate":118}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250639, 46.981265]},"properties":{"place": 1, "elevation": 1891, "time":1598350620000, "HeartRate":118}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250672, 46.981206]},"properties":{"place": 1, "elevation": 1892, "time":1598350680000, "HeartRate":118}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250728, 46.981228]},"properties":{"place": 1, "elevation": 1893, "time":1598350740000, "HeartRate":118}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250723, 46.981259]},"properties":{"place": 1, "elevation": 1894, "time":1598350800000, "HeartRate":117}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250736, 46.981275]},"properties":{"place": 1, "elevation": 1906, "time":1598350860000, "HeartRate":117}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250765, 46.981297]},"properties":{"place": 1, "elevation": 1907, "time":1598350920000, "HeartRate":117}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250819, 46.981298]},"properties":{"place": 1, "elevation": 1908, "time":1598350980000, "HeartRate":116}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250806, 46.981185]},"properties":{"place": 1, "elevation": 1909, "time":1598351040000, "HeartRate":116}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250797, 46.981125]},"properties":{"place": 1, "elevation": 1910, "time":1598351100000, "HeartRate":116}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250763, 46.981072]},"properties":{"place": 1, "elevation": 1911, "time":1598351160000, "HeartRate":115}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250733, 46.980989]},"properties":{"place": 1, "elevation": 1912, "time":1598351220000, "HeartRate":115}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250729, 46.980905]},"properties":{"place": 1, "elevation": 1913, "time":1598351280000, "HeartRate":115}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250714, 46.980838]},"properties":{"place": 1, "elevation": 1914, "time":1598351340000, "HeartRate":115}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250697, 46.980761]},"properties":{"place": 1, "elevation": 1915, "time":1598351400000, "HeartRate":114}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250697, 46.980693]},"properties":{"place": 1, "elevation": 1916, "time":1598351460000, "HeartRate":114}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250675, 46.980629]},"properties":{"place": 1, "elevation": 1917, "time":1598351520000, "HeartRate":114}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250679, 46.980552]},"properties":{"place": 1, "elevation": 1936, "time":1598351580000, "HeartRate":113}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250654, 46.980463]},"properties":{"place": 1, "elevation": 1937, "time":1598351640000, "HeartRate":113}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250611, 46.980397]},"properties":{"place": 1, "elevation": 1938, "time":1598351700000, "HeartRate":113}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250587, 46.980308]},"properties":{"place": 1, "elevation": 1939, "time":1598351760000, "HeartRate":112}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250554, 46.980268]},"properties":{"place": 1, "elevation": 1940, "time":1598351820000, "HeartRate":112}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250569, 46.980211]},"properties":{"place": 1, "elevation": 1941, "time":1598351880000, "HeartRate":112}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250607, 46.980213]},"properties":{"place": 1, "elevation": 1942, "time":1598351940000, "HeartRate":112}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250706, 46.980286]},"properties":{"place": 1, "elevation": 1943, "time":1598352000000, "HeartRate":111}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250781, 46.980323]},"properties":{"place": 1, "elevation": 1944, "time":1598352060000, "HeartRate":111}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250805, 46.980307]},"properties":{"place": 1, "elevation": 1961, "time":1598352120000, "HeartRate":111}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250797, 46.980259]},"properties":{"place": 1, "elevation": 1962, "time":1598352180000, "HeartRate":110}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250773, 46.980228]},"properties":{"place": 1, "elevation": 1963, "time":1598352240000, "HeartRate":110}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250757, 46.980197]},"properties":{"place": 1, "elevation": 1964, "time":1598352300000, "HeartRate":110}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250746, 46.980175]},"properties":{"place": 1, "elevation": 1965, "time":1598352360000, "HeartRate":109}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250794, 46.980164]},"properties":{"place": 1, "elevation": 1966, "time":1598352420000, "HeartRate":109}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250864, 46.980198]},"properties":{"place": 1, "elevation": 1967, "time":1598352480000, "HeartRate":109}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250939, 46.980236]},"properties":{"place": 1, "elevation": 1981, "time":1598352540000, "HeartRate":109}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251019, 46.980254]},"properties":{"place": 1, "elevation": 1982, "time":1598352600000, "HeartRate":108}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251006, 46.980198]},"properties":{"place": 1, "elevation": 1983, "time":1598352660000, "HeartRate":108}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251006, 46.980198]},"properties":{"place": 1, "elevation": 1984, "time":1598352720000, "HeartRate":108}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250999, 46.980102]},"properties":{"place": 1, "elevation": 1985, "time":1598352780000, "HeartRate":107}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251053, 46.980098]},"properties":{"place": 1, "elevation": 1986, "time":1598352840000, "HeartRate":107}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251107, 46.980157]},"properties":{"place": 1, "elevation": 1986, "time":1598352900000, "HeartRate":107}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251163, 46.980214]},"properties":{"place": 1, "elevation": 1986, "time":1598352960000, "HeartRate":106}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251217, 46.980234]},"properties":{"place": 1, "elevation": 1987, "time":1598353020000, "HeartRate":106}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251265, 46.980225]},"properties":{"place": 1, "elevation": 2011, "time":1598353080000, "HeartRate":106}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251249, 46.980192]},"properties":{"place": 1, "elevation": 2012, "time":1598353140000, "HeartRate":106}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251217, 46.980154]},"properties":{"place": 1, "elevation": 2013, "time":1598353200000, "HeartRate":105}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251182, 46.980099]},"properties":{"place": 1, "elevation": 2014, "time":1598353260000, "HeartRate":105}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251179, 46.980061]},"properties":{"place": 1, "elevation": 2015, "time":1598353320000, "HeartRate":105}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251289, 46.980028]},"properties":{"place": 1, "elevation": 2016, "time":1598353380000, "HeartRate":104}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251243, 46.980043]},"properties":{"place": 1, "elevation": 2017, "time":1598353440000, "HeartRate":104}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251299, 46.980102]},"properties":{"place": 1, "elevation": 2017, "time":1598353500000, "HeartRate":104}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251363, 46.980155]},"properties":{"place": 1, "elevation": 2024, "time":1598353560000, "HeartRate":103}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251422, 46.980137]},"properties":{"place": 1, "elevation": 2025, "time":1598353620000, "HeartRate":103}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251411, 46.980111]},"properties":{"place": 1, "elevation": 2026, "time":1598353680000, "HeartRate":103}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251406, 46.980084]},"properties":{"place": 1, "elevation": 2026, "time":1598353740000, "HeartRate":103}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251390, 46.980042]},"properties":{"place": 1, "elevation": 2026, "time":1598353800000, "HeartRate":102}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251387, 46.980011]},"properties":{"place": 1, "elevation": 2027, "time":1598353860000, "HeartRate":102}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251438, 46.980011]},"properties":{"place": 1, "elevation": 2028, "time":1598353920000, "HeartRate":102}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251484, 46.980057]},"properties":{"place": 1, "elevation": 2029, "time":1598353980000, "HeartRate":101}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251538, 46.980105]},"properties":{"place": 1, "elevation": 2038, "time":1598354040000, "HeartRate":101}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251594, 46.980138]},"properties":{"place": 1, "elevation": 2039, "time":1598354100000, "HeartRate":101}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251621, 46.980131]},"properties":{"place": 1, "elevation": 2039, "time":1598354160000, "HeartRate":100}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251605, 46.980096]},"properties":{"place": 1, "elevation": 2040, "time":1598354220000, "HeartRate":100}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251589, 46.980069]},"properties":{"place": 1, "elevation": 2041, "time":1598354280000, "HeartRate":103}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251577, 46.980048]},"properties":{"place": 1, "elevation": 2041, "time":1598354340000, "HeartRate":105}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251555, 46.980048]},"properties":{"place": 1, "elevation": 2041, "time":1598354400000, "HeartRate":106}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251571, 46.979965]},"properties":{"place": 1, "elevation": 2041, "time":1598354460000, "HeartRate":109}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251639, 46.979985]},"properties":{"place": 1, "elevation": 2042, "time":1598354520000, "HeartRate":111}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251681, 46.980027]},"properties":{"place": 1, "elevation": 2043, "time":1598354580000, "HeartRate":112}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251743, 46.980042]},"properties":{"place": 1, "elevation": 2048, "time":1598354640000, "HeartRate":114}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251719, 46.979993]},"properties":{"place": 1, "elevation": 2049, "time":1598354700000, "HeartRate":116}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251695, 46.979944]},"properties":{"place": 1, "elevation": 2050, "time":1598354760000, "HeartRate":120}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251676, 46.979883]},"properties":{"place": 1, "elevation": 2051, "time":1598354820000, "HeartRate":120}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251665, 46.979834]},"properties":{"place": 1, "elevation": 2052, "time":1598354880000, "HeartRate":120}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251646, 46.979788]},"properties":{"place": 1, "elevation": 2052, "time":1598354940000, "HeartRate":110}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251643, 46.979744]},"properties":{"place": 1, "elevation": 2052, "time":1598355000000, "HeartRate":117}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251713, 46.979803]},"properties":{"place": 1, "elevation": 2052, "time":1598355060000, "HeartRate":118}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251788, 46.979882]},"properties":{"place": 1, "elevation": 2053, "time":1598355120000, "HeartRate":118}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251887, 46.979948]},"properties":{"place": 1, "elevation": 2054, "time":1598355180000, "HeartRate":118}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251981, 46.979997]},"properties":{"place": 1, "elevation": 2055, "time":1598355240000, "HeartRate":118}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.252045, 46.980079]},"properties":{"place": 1, "elevation": 2056, "time":1598355300000, "HeartRate":119}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.252124, 46.980066]},"properties":{"place": 1, "elevation": 2057, "time":1598355360000, "HeartRate":119}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.252096, 46.980004]},"properties":{"place": 1, "elevation": 2057, "time":1598355420000, "HeartRate":119}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.252061, 46.979944]},"properties":{"place": 1, "elevation": 2057, "time":1598355480000, "HeartRate":120}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.252023, 46.979896]},"properties":{"place": 1, "elevation": 2058, "time":1598355540000, "HeartRate":120}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251988, 46.979826]},"properties":{"place": 1, "elevation": 2063, "time":1598355600000, "HeartRate":120}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251961, 46.979727]},"properties":{"place": 1, "elevation": 2064, "time":1598355660000, "HeartRate":120}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251915, 46.979639]},"properties":{"place": 1, "elevation": 2065, "time":1598355720000, "HeartRate":121}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251904, 46.979544]},"properties":{"place": 1, "elevation": 2065, "time":1598355780000, "HeartRate":121}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251866, 46.979438]},"properties":{"place": 1, "elevation": 2065, "time":1598355840000, "HeartRate":121}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251818, 46.979350]},"properties":{"place": 1, "elevation": 2065, "time":1598355900000, "HeartRate":122}},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.251751, 46.979262]},"properties":{"place": 1, "elevation": 2066, "time":1598355960000, "HeartRate":122}}
 ]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
