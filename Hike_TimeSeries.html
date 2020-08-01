@@ -1,447 +1,535 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <meta
-          name="viewport"
-          content="initial-scale=1,maximum-scale=1,user-scalable=no"
-  />
-  <title>
-    Filter features with TimeSlider | Sample | ArcGIS API for JavaScript 4.16
-  </title>
+    <meta charset="utf-8" />
+    <meta
+            name="viewport"
+            content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>
+        Filter features with TimeSlider | Sample | ArcGIS API for JavaScript 4.16
+    </title>
 
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
-  <title>Measure Tool</title>
-  <link rel="stylesheet" href="https://js.arcgis.com/3.33/esri/themes/calcite/dijit/calcite.css">
-  <link rel="stylesheet" href="https://js.arcgis.com/3.33/esri/themes/calcite/esri/esri.css">
-
-  <style>
-    html,
-    body,
-    #viewDiv {
-      padding: 0;
-      margin: 0;
-      height: 100%;
-      width: 100%;
-    }
-
-    #timeSlider {
-      position: absolute;
-      left: 100px;
-      right: 100px;
-      bottom: 30px;
-    }
-
-    #infoDiv {
-      height: 250px;
-      padding: 10px;
-      width: 280px;
-    }
-
-    #infoDiv span {
-      color: #f9c653;
-      font-size: 12pt;
-      font-weight: bolder;
-    }
-  </style>
-
-  <link
-          rel="stylesheet"
-          href="https://js.arcgis.com/4.16/esri/themes/dark/main.css"
-  />
-  <script src="https://js.arcgis.com/4.16/"></script>
-  <script>
-    require([
-      "esri/Map",
-      "esri/views/MapView",
-      "esri/layers/GeoJSONLayer",
-      "esri/widgets/TimeSlider",
-      "esri/widgets/Expand",
-      "esri/widgets/Legend",
-      "esri/Map",
-      "esri/views/SceneView",
-      "esri/widgets/Search",
-      "esri/views/SceneView",
-      "esri/widgets/Compass",
-      "esri/widgets/Measurement",
-      "esri/layers/FeatureLayer",
-      "esri/widgets/Legend",
-      "esri/widgets/DistanceMeasurement2D",
-      "esri/widgets/AreaMeasurement2D",
-      "esri/widgets/Sketch",
-      "esri/Map",
-      "esri/layers/GraphicsLayer",
-      "esri/views/MapView",
-      "esri/symbols/SimpleMarkerSymbol",
-      "esri/core/urlUtils"
-
-
-    ], function (Map,
-                 MapView,
-                 GeoJSONLayer,
-
-                 TimeSlider,
-                 Expand,
-                 Legend,
-
-                 urlUtils,
-                 Sketch,
-                 GraphicsLayer,
-                 Compass,
-                 Search,
-                 Measurement,
-                 FeatureLayer,
-                 DistanceMeasurement2D,
-                 AreaMeasurement2D,
-                 SimpleMarkerSymbol) {
-
-
-      var url = "https://github.com/ThomasJames/Geojson_walker/blob/master/test_lineString.geojson";
-
-      const layer_2 = new GeoJSONLayer({
-        url: url,
-      });
-
-
-      const layer = new GeoJSONLayer({
-        url: "https://raw.githubusercontent.com/ThomasJames/Geojson_walker/master/walk.geojson",
-        // set the CSVLayer's timeInfo based on the date field
-        timeInfo: {
-          startField: "time", // name of the date field
-          interval: {
-            // set time interval to one day
-            unit: "seconds",
-            value: 0.01
-          }
-        },
-        renderer: {
-          type: "simple",
-          field: "elevation",
-          symbol: {
-            type: "simple-marker",
-            color: "orange",
-            outline: null,
-            label: "Data Point"
-          },
-          visualVariables: [
-            {
-                  type: "size",
-                  field: "CaloriesBurned",
-                  stops: [
-                    {
-                      value: 2.0,
-                      size: "3px"
-                    },
-                    {
-                      value: 2.1,
-                      size: "4px"
-                    },
-                    {
-                      value: 2.2,
-                      size: "5px"
-                    },
-                    {
-                      value: 2.3,
-                      size: "7px"
-                    },
-                    {
-                      value: 2.4,
-                      size: "9px"
-                    },
-                    {
-                      value: 2.5,
-                      size: "11px"
-                    },
-                    {
-                      value: 2.6,
-                      size: "15px"
-                    },
-                    {
-                      value: 2.7,
-                      size: "17px"
-                    },
-                  ]
-                },
-                {
-              type: "color",
-              field: "HeartRate",
-              stops: [
-                {
-                  value: 100,
-                  color: "#fffdd0",
-                  label: "<100bpm"
-                },
-                {
-                  value: 115,
-                  color: "#F8864D",
-                  label: "110 - 115bmp"
-                },
-                {
-                  value: 120,
-                  color: "#C53C06",
-                  label: "115bpm +"
-                }
-              ]
-            }
-          ]
-        },
-        popupTemplate: {
-          title: "{title}",
-          content: [
-            {
-              type: "fields",
-              fieldInfos: [
-                {
-                  fieldName: "place",
-                  label: "Location",
-                  visible: true
-                },
-                {
-                  fieldName: "elevation",
-                  label: "Elevation",
-                  visible: true
-                },
-                {
-                  fieldName: "HeartRate",
-                  label: "HeartRate",
-                  visible: true
-                }
-              ]
-            }
-          ]
+    <style>
+        html,
+        body,
+        #viewDiv {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
         }
 
-      });
+        #timeSlider {
+            position: absolute;
+            left: 100px;
+            right: 100px;
+            bottom: 30px;
+        }
 
-      const map = new Map({
-        basemap: "satellite",
-        layers: [layer, layer_2]
-      });
-      
-      var view = new MapView({
-        map: map,
-        scale: 123456789,
-        container: "viewDiv",
-        zoom: 17,
-        center: [8.250732, 46.982330],
-        
-      });
+        #infoDiv {
+            height: 300px;
+            padding: 10px;
+            width: 280px;
+        }
 
+        #infoDiv span {
+            color: #f9c653;
+            font-size: 12pt;
+            font-weight: bolder;
+        }
 
-      // create a new time slider widget
-      // set other properties when the layer view is loaded
-      // by default timeSlider.mode is "time-window" - shows
-      // data falls within time range
-      const timeSlider = new TimeSlider({
-        container: "timeSlider",
-        mode: "time-window",
-        view: view
-      });
-      view.ui.add(timeSlider, "manual");
+        #toolbarDiv {
+            position: absolute;
+            top: 13px;
+            right: 15px;
+            cursor: default;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
 
+        .esri-widget--button.active,
+        .esri-widget--button.active:hover,
+        .esri-widget--button.active:focus {
+            cursor: default;
+            background-color: #999696;
+        }
+        .esri-widget--button.active path,
+        .esri-widget--button.active:hover path,
+        .esri-widget--button.active:focus path {
+            fill: #e4e4e4;
+        }
+    </style>
 
-      // wait till the layer view is loaded
-      view.whenLayerView(layer).then(function (lv) {
-        layerView = lv;
+    <link
+            rel="stylesheet"
+            href="https://js.arcgis.com/4.16/esri/themes/dark/main.css"
+    />
+    <script src="https://js.arcgis.com/4.16/"></script>
+    <script>
+        require([
+            "esri/Map",
+            "esri/views/MapView",
+            "esri/layers/GeoJSONLayer",
+            "esri/widgets/TimeSlider",
+            "esri/widgets/Expand",
+            "esri/widgets/Legend",
+            "esri/widgets/Compass",
+            "esri/widgets/ScaleBar",
 
-        // start time of the time slider - 5/25/2019
-        const start = new Date(2020, 7, 25, 12, 0, 0);
-        // set time slider's full extent to
-        // 5/25/5019 - until end date of layer's fullTimeExtent
-        timeSlider.fullTimeExtent = {
-          start: start,
-          end: layer.timeInfo.fullTimeExtent.end,
-          playRate: 0.1,
-          step: 1,
-          stops: {
-            interval: {
-              value: 0.1,
-              unit: "minutes"
-            }
-          }
-        };
-        console.log(timeSlider.fullTimeExtent.start, timeSlider.fullTimeExtent.end)
-
-
-        // We will be showing earthquakes with one day interval
-        // when the app is loaded we will show earthquakes that
-        // happened between 5/25 - 5/26.
-        const end = new Date(2020, 7, 26, 0, 10, 0);
-        // end of current time extent for time slider
-        // showing earthquakes with one day interval
-        end.setDate(end.getDate() + 1);
-
-        // Values property is set so that timeslider
-        // widget show the first day. We are setting
-        // the thumbs positions.
-
-        timeSlider.values = [start, end];
-      });
+        ], function (Map, MapView, GeoJSONLayer, TimeSlider, Expand, Legend, Compass, ScaleBar, FeatureLayer) {
+            let layerView;
 
 
+            var url = "https://github.com/ThomasJames/Geojson_walker/blob/master/test_lineString.geojson";
 
-      // watch for time slider timeExtent change
-      timeSlider.watch("timeExtent", function () {
-        // only show earthquakes happened up until the end of
-        // timeSlider's current time extent.
-        layer.definitionExpression =
-                "time <= " + timeSlider.timeExtent.end.getTime();
+            const layer2 = new GeoJSONLayer({
+              url: url,
+            });
 
-        // now gray out earthquakes that happened before the time slider's current
-        // timeExtent... leaving footprint of earthquakes that already happened
-        layerView.effect = {
-          filter: {
-            timeExtent: timeSlider.timeExtent,
-            geometry: view.extent
-          },
-          excludedEffect: "grayscale(20%) opacity(12%)"
-        };
-        // run statistics on earthquakes fall within the current time extent
-        const statQuery = layerView.effect.filter.createQuery();
-        statQuery.outStatistics = [
-          magMax,
-          magAvg,
-          magMin,
-          tremorCount,
-          avgDepth,
-          elChange,
-          calories
-
-        ];
-
-        layer
-                .queryFeatures(statQuery)
-                .then(function (result) {
-                  let htmls = [];
-                  statsDiv.innerHTML = "";
-                  if (result.error) {
-                    return result.error;
-                  } else {
-                    if (result.features.length >= 1) {
-                      var attributes = result.features[0].attributes;
-                      for (name in statsFields) {
-                        if (attributes[name] && attributes[name] != null) {
-                          const html =
-                                  "<br/>" +
-                                  statsFields[name] +
-                                  ": <span> " +
-                                  attributes[name].toFixed(2) +
-                                  "</span>";
-                          htmls.push(html);
-                        }
-                      }
-                      var yearHtml = '<P><B>Hike Statistics: </B></P>'
-                      if (htmls[0] == undefined) {
-                        statsDiv.innerHTML = yearHtml;
-                      } else {
-                        statsDiv.innerHTML =
-                                yearHtml + htmls[0] + htmls[1] + htmls[2] + htmls[3] + htmls[4];
-                      }
+            const layer = new GeoJSONLayer({
+                url:
+                    "https://raw.githubusercontent.com/ThomasJames/Geojson_walker/master/walk.geojson",
+                copyright: "USGS Earthquakes",
+                title: "USGS Earthquakes",
+                // set the CSVLayer's timeInfo based on the date field
+                timeInfo: {
+                    startField: "time", // name of the date field
+                    interval: {
+                        // set time interval to one day
+                        unit: "seconds",
+                        value: 1
                     }
-                  }
-                })
-                .catch(function (error) {
-                  console.log(error);
+                },
+                renderer: {
+                    type: "simple",
+                    field: "elevation",
+                    symbol: {
+                        type: "simple-marker",
+                        color: "orange",
+                        outline: null
+                    },
+                    visualVariables: [
+                        {
+                            type: "size",
+                            field: "CaloriesBurned",
+                            stops: [
+                                {
+                                    value: 2.0,
+                                    size: "3px"
+                                },
+                                {
+                                    value: 2.1,
+                                    size: "4px"
+                                },
+                                {
+                                    value: 2.2,
+                                    size: "5px"
+                                },
+                                {
+                                    value: 2.3,
+                                    size: "7px"
+                                },
+                                {
+                                    value: 2.4,
+                                    size: "9px"
+                                },
+                                {
+                                    value: 2.5,
+                                    size: "11px"
+                                },
+                                {
+                                    value: 2.6,
+                                    size: "15px"
+                                },
+                                {
+                                    value: 2.7,
+                                    size: "17px"
+                                },
+                            ]
+                        },
+                        {
+                            type: "color",
+                            field: "HeartRate",
+                            stops: [
+                                {
+                                    value: 100,
+                                    color: "#fffdd0",
+                                    label: "<100bpm"
+                                },
+                                {
+                                    value: 115,
+                                    color: "#F8864D",
+                                    label: "110 - 115bmp"
+                                },
+                                {
+                                    value: 120,
+                                    color: "#C53C06",
+                                    label: "115bpm +"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                popupTemplate: {
+                    title: "{title}",
+                    content: [
+                        {
+                            type: "fields",
+                            fieldInfos: [
+                                {
+                                    fieldName: "place",
+                                    label: "Location",
+                                    visible: true
+                                },
+                                {
+                                    fieldName: "elevation",
+                                    label: "Elevation",
+                                    visible: true
+                                },
+                                {
+                                    fieldName: "HeartRate",
+                                    label: "HeartRate",
+                                    visible: true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            });
+
+            const map = new Map({
+                basemap: "satellite",
+                layers: [layer]
+            });
+
+            var view = new MapView({
+                map: map,
+                container: "viewDiv",
+                zoom: 14,
+                center: [8.250732, 46.982330]
+            });
+
+            // create a new time slider widget
+            // set other properties when the layer view is loaded
+            // by default timeSlider.mode is "time-window" - shows
+            // data falls within time range
+            const timeSlider = new TimeSlider({
+                container: "timeSlider",
+                playRate: 50,
+                stops: {
+                    interval: {
+                        value: 1,
+                        unit: "seconds"
+                    }
+                }
+            });
+            view.ui.add(timeSlider, "manual");
+
+            // wait till the layer view is loaded
+            view.whenLayerView(layer).then(function (lv) {
+                layerView = lv;
+
+                // start time of the time slider - 5/25/2019
+                const start = new Date(2020, 7, 25, 12, 0);
+                // set time slider's full extent to
+                // 5/25/5019 - until end date of layer's fullTimeExtent
+                timeSlider.fullTimeExtent = {
+                    start: start,
+                    end: layer.timeInfo.fullTimeExtent.end
+                };
+
+                // We will be showing earthquakes with one day interval
+                // when the app is loaded we will show earthquakes that
+                // happened between 5/25 - 5/26.
+                const end = new Date(start);
+                // end of current time extent for time slider
+                // showing earthquakes with one day interval
+                end.setDate(end.getDate() + 1);
+
+                // Values property is set so that timeslider
+                // widget show the first day. We are setting
+                // the thumbs positions.
+                timeSlider.values = [start, end];
+            });
+
+            // watch for time slider timeExtent change
+            timeSlider.watch("timeExtent", function () {
+                // only show earthquakes happened up until the end of
+                // timeSlider's current time extent.
+                layer.definitionExpression =
+                    "time <= " + timeSlider.timeExtent.end.getTime();
+
+                // now gray out earthquakes that happened before the time slider's current
+                // timeExtent... leaving footprint of earthquakes that already happened
+                layerView.effect = {
+                    filter: {
+                        timeExtent: timeSlider.timeExtent,
+                        geometry: view.extent
+                    },
+                    excludedEffect: "grayscale(20%) opacity(12%)"
+                };
+
+                // run statistics on earthquakes fall within the current time extent
+                const statQuery = layerView.effect.filter.createQuery();
+                statQuery.outStatistics = [
+                    magMax,
+                    magAvg,
+                    magMin,
+                    avgDepth,
+                    elChange,
+                    calories
+                ];
+
+                layer
+                    .queryFeatures(statQuery)
+                    .then(function (result) {
+                        let htmls = [];
+                        statsDiv.innerHTML = "";
+                        if (result.error) {
+                            return result.error;
+                        } else {
+                            if (result.features.length >= 1) {
+                                var attributes = result.features[0].attributes;
+                                for (name in statsFields) {
+                                    if (attributes[name] && attributes[name] != null) {
+                                        const html =
+                                            "<br/>" +
+                                            statsFields[name] +
+                                            ": <b><span> " +
+                                            attributes[name].toFixed(2) +
+                                            "</span></b>";
+                                        htmls.push(html);
+                                    }
+                                }
+                                var yearHtml =
+                                    "<span>" +
+                                    "</span> Mount Pilatus Hike " +
+                                    timeSlider.timeExtent.start.toLocaleDateString() +
+                                    " - " +
+                                    timeSlider.timeExtent.end.toLocaleDateString() +
+                                    ".<br/>";
+
+                                if (htmls[0] == undefined) {
+                                    statsDiv.innerHTML = yearHtml;
+                                } else {
+                                    statsDiv.innerHTML =
+                                        yearHtml + htmls[0] + htmls[1] + htmls[2] + htmls[3] + htmls[4];
+                                }
+                            }
+                        }
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            });
+
+
+            const calories = {
+                onStatisticField: 'CaloriesBurned',
+                outStatisticFieldName: "calories_burned",
+                statisticType: "count"
+            };
+
+            const elChange = {
+                onStatisticField: "HeartRate",
+                outStatisticFieldName: "elevation_change",
+                statisticType: "count"
+            };
+
+            const avgDepth = {
+                onStatisticField: "elevation",
+                outStatisticFieldName: "Average_depth",
+                statisticType: "avg"
+            };
+
+            const magMax = {
+                onStatisticField: "HeartRate",
+                outStatisticFieldName: "Max_magnitude",
+                statisticType: "max"
+            };
+
+            const magAvg = {
+                onStatisticField: "HeartRate",
+                outStatisticFieldName: "Average_magnitude",
+                statisticType: "avg"
+            };
+
+            const magMin = {
+                onStatisticField: "HeartRate",
+                outStatisticFieldName: "Min_magnitude",
+                statisticType: "min"
+            };
+
+
+            const statsFields = {
+                Max_magnitude: "Max Heart-rate (m)",
+                Average_magnitude: "Average Heart-rate (m)",
+                Min_magnitude: "Minimum Heart-rate, (m)",
+                elevation_change: "Elevation increase (m)",
+                calories_burned: "Calories Burned (j)"
+            };
+
+            // add a legend for the earthquakes layer
+            const legendExpand = new Expand({
+                collapsedIconClass: "esri-icon-collapse",
+                expandIconClass: "esri-icon-expand",
+                expandTooltip: "Legend",
+                view: view,
+                content: new Legend({
+                    view: view
+                }),
+                expanded: false
+            });
+            view.ui.add(legendExpand, "top-left");
+
+
+            const compass = new Compass({
+                view: view
+            })
+            view.ui.add(compass, "top-left");
+
+            var scaleBar = new ScaleBar({
+                view: view
+            });
+            // Add widget to the bottom left corner of the view
+            view.ui.add(scaleBar, {
+                position: "top-right"
+            });
+
+            const statsDiv = document.getElementById("statsDiv");
+            const infoDiv = document.getElementById("infoDiv");
+            const infoDivExpand = new Expand({
+                collapsedIconClass: "esri-icon-collapse",
+                expandIconClass: "esri-icon-expand",
+                expandTooltip: "Expand earthquakes info",
+                view: view,
+                content: infoDiv,
+                expanded: true
+            });
+            view.ui.add(infoDivExpand, "top-right");
+
+
+            // Set-up event handlers for buttons and click events
+            const switchButton = document.getElementById("switch-btn");
+            const distanceButton = document.getElementById("distance");
+            const areaButton = document.getElementById("area");
+            const clearButton = document.getElementById("clear");
+
+            switchButton.addEventListener("click", function () {
+                switchView();
+            });
+            distanceButton.addEventListener("click", function () {
+                distanceMeasurement();
+            });
+            areaButton.addEventListener("click", function () {
+                areaMeasurement();
+            });
+            clearButton.addEventListener("click", function () {
+                clearMeasurements();
+            });
+
+            // Call the loadView() function for the initial view
+            loadView();
+
+            // The loadView() function to define the view for the widgets and div
+            function loadView() {
+                activeView.set({
+                    container: "viewDiv"
                 });
-      });
+                // Add the appropriate measurement UI to the bottom-right when activated
+                activeView.ui.add(measurement, "bottom-right");
+                // Add the legend to the bottom left
+                activeView.ui.add(legend, "bottom-left");
+                // Set the views for the widgets
+                measurement.view = activeView;
+                legend.view = activeView;
+            }
 
-      const calories = {
-        onStatisticField: 'CaloriesBurned',
-        outStatisticFieldName: "calories_burned",
-        statisticType: "count"
-      };
+            // When the 2D or 3D button is activated, the switchView() function is called
+            function switchView() {
+                // Clone the viewpoint for the MapView or SceneView
+                const viewpoint = activeView.viewpoint.clone();
+                // Get the view type, either 2d or 3d
+                const type = activeView.type;
 
-      const elChange = {
-        onStatisticField: "HeartRate",
-        outStatisticFieldName: "elevation_change",
-        statisticType: "count"
-      };
+                // Clear any measurements that had been drawn
+                clearMeasurements();
 
-      const avgDepth = {
-        onStatisticField: "elevation",
-        outStatisticFieldName: "Average_depth",
-        statisticType: "avg"
-      };
+                // Reset the measurement tools in the div
+                activeView.container = null;
+                activeView = null;
+                // Set the view based on whether it switched to 2D MapView or 3D SceneView
+                activeView = type.toUpperCase() === "2D" ? sceneView : mapView;
+                activeView.set({
+                    container: "viewDiv",
+                    viewpoint: viewpoint
+                });
+                // Add the appropriate measurement UI to the bottom-right when activated
+                activeView.ui.add(measurement, "bottom-right");
+                // Add the legend to the bottom left
+                activeView.ui.add(legend, "bottom-left");
 
-      const magMax = {
-        onStatisticField: "HeartRate",
-        outStatisticFieldName: "Max_magnitude",
-        statisticType: "max"
-      };
+                // Set the views for the widgets
+                measurement.view = activeView;
+                legend.view = activeView;
+                // Reset the value of the 2D or 3D switching button
+                switchButton.value = type.toUpperCase();
+            }
 
-      const magAvg = {
-        onStatisticField: "HeartRate",
-        outStatisticFieldName: "Average_magnitude",
-        statisticType: "avg"
-      };
+            // Call the appropriate DistanceMeasurement2D or DirectLineMeasurement3D
+            function distanceMeasurement() {
+                const type = activeView.type;
+                measurement.activeTool =
+                    type.toUpperCase() === "2D" ? "distance" : "direct-line";
+                distanceButton.classList.add("active");
+                areaButton.classList.remove("active");
+            }
 
-      const magMin = {
-        onStatisticField: "HeartRate",
-        outStatisticFieldName: "Min_magnitude",
-        statisticType: "min"
-      };
+            // Call the appropriate AreaMeasurement2D or AreaMeasurement3D
+            function areaMeasurement() {
+                measurement.activeTool = "area";
+                distanceButton.classList.remove("active");
+                areaButton.classList.add("active");
+            }
 
-      const tremorCount = {
-        onStatisticField: "HeartRate",
-        outStatisticFieldName: "tremor_count",
-        statisticType: "count"
-      };
+            // Clears all measurements
+            function clearMeasurements() {
+                distanceButton.classList.remove("active");
+                areaButton.classList.remove("active");
+                measurement.clear();
+            }
 
-      const statsFields = {
-        Max_magnitude: "Max Heart-rate (m)",
-        Average_magnitude: "Average Heart-rate (m)",
-        Min_magnitude: "Minimum Heart-rate, (m)",
-        elevation_change: "Elevation increase (m)",
-        calories_burned: "Calories Burned (j)"
-      };
+        });
+    </script>
+</head>
 
-      // add a legend for the earthquakes layer
-      const legendExpand = new Expand({
-        collapsedIconClass: "esri-icon-collapse",
-        expandIconClass: "esri-icon-expand",
-        expandTooltip: "Legend",
-        view: view,
-        content: new Legend({
-          view: view
-        }),
-        expanded: false
-      });
-      view.ui.add(legendExpand, "top-left");
-
-      const statsDiv = document.getElementById("statsDiv");
-      const infoDiv = document.getElementById("infoDiv");
-      const infoDivExpand = new Expand({
-        collapsedIconClass: "esri-icon-collapse",
-        expandIconClass: "esri-icon-expand",
-        expandTooltip: "Expand earthquakes info",
-        view: view,
-        content: infoDiv,
-        expanded: true
-      });
-      view.ui.add(infoDivExpand, "top-right");
-
-
-    });
-
-
-
-
-    // MEASUREMENT TOOL.
-    // Search Widget
-    // Scale Bar
-    // Compass
-    // Line
-    // Other data layers.
-  </script>
-  </head>
-  <body>
-  <div id="viewDiv"></div>
-  <div id="timeSlider"></div>
-  <div id="infoDiv" class="esri-widget">
-    <div><b>Mount Pilatus Hike</b></div>
+<body>
+<div id="viewDiv"></div>
+<div id="timeSlider"></div>
+<div id="infoDiv" class="esri-widget">
+    <div><b>Strava Analysis</b></div>
     <br />
     <div id="statsDiv" class="esri-widget"></div>
-  </body>
 
+    <div id="toolbarDiv" class="esri-component esri-widget">
+        <button
+                id="distance"
+                class="esri-widget--button esri-interactive esri-icon-measure-line"
+                title="Distance Measurement Tool"
+        ></button>
+        <button
+                id="area"
+                class="esri-widget--button esri-interactive esri-icon-measure-area"
+                title="Area Measurement Tool"
+        ></button>
+        <button
+                id="clear"
+                class="esri-widget--button esri-interactive esri-icon-trash"
+                title="Clear Measurements"
+        ></button>
+    </div>
 
+</div>
+</body>
 </html>
