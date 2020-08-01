@@ -1,6 +1,6 @@
 {"type":"FeatureCollection", "features": [
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250772, 46.982499]},"properties":{"place":"Mount Pilatus 25/07/2020 - 8.250772, 46.982499 ", "elevation": 1867, "time":1598349720000, "HeartRate":100, "CaloriesBurned": 2.00 }},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250772, 46.982391]},"properties":{"place":"Mount Pilatus 25/07/2020 - 8.250772, 46.982391 ", "elevation": 1868, "time":1598349730000, "HeartRate":101, "CaloriesBurned": 2.02 }},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250772, 46.982499]},"properties":{"place":"Klimsenkapelle 25/07/2020 - 8.250772, 46.982499 ", "elevation": 1867, "time":1598349720000, "HeartRate":100, "CaloriesBurned": 2.00 }},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250772, 46.982391]},"properties":{"place":"Klimsenkapelle 25/07/2020 - 8.250772, 46.982391 ", "elevation": 1868, "time":1598349730000, "HeartRate":101, "CaloriesBurned": 2.02 }},
 {"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250802, 46.982291]},"properties":{"place":"Mount Pilatus 25/07/2020 - 8.250802, 46.982291 ", "elevation": 1869, "time":1598349740000, "HeartRate":108, "CaloriesBurned": 2.16 }},
 {"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250802, 46.982226]},"properties":{"place":"Mount Pilatus 25/07/2020 - 8.250802, 46.982226 ", "elevation": 1873, "time":1598349750000, "HeartRate":105, "CaloriesBurned": 2.10 }},
 {"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250802, 46.982226]},"properties":{"place":"Mount Pilatus 25/07/2020 - 8.250802, 46.982226 ", "elevation": 1874, "time":1598349760000, "HeartRate":102, "CaloriesBurned": 2.04 }},
@@ -110,9 +110,9 @@
 {"type": "Feature", "geometry":{"type":"Point","coordinates":[8.252730, 46.979399]},"properties":{"place":"Mount Pilatus 25/07/2020 - 8.252730, 46.979399 ", "elevation": 2068, "time":1598350800000, "HeartRate":119, "CaloriesBurned": 2.46 }},
 {"type": "Feature", "geometry":{"type":"Point","coordinates":[8.252934, 46.979516]},"properties":{"place":"Mount Pilatus 25/07/2020 - 8.252934, 46.979516 ", "elevation": 2068, "time":1598350810000, "HeartRate":118, "CaloriesBurned": 2.47 }},
 {"type": "Feature", "geometry":{"type":"Point","coordinates":[8.253320, 46.979670]},"properties":{"place":"Mount Pilatus 25/07/2020 - 8.253320, 46.979670 ", "elevation": 2069, "time":1598350820000, "HeartRate":117, "CaloriesBurned": 2.47 }},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.253631, 46.979736]},"properties":{"place":"Mount Pilatus 25/07/2020 - 8.253631, 46.979736 ", "elevation": 2070, "time":1598350830000, "HeartRate":111, "CaloriesBurned": 2.48 }},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.253867, 46.979795]},"properties":{"place":"Mount Pilatus 25/07/2020 - 8.253867, 46.979795 ", "elevation": 2071, "time":1598350840000, "HeartRate":111, "CaloriesBurned": 2.48 }},
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.254200, 46.979818]},"properties":{"place":"Mount Pilatus 25/07/2020 - 8.254200, 46.979818 ", "elevation": 2071, "time":1598350850000, "HeartRate":112, "CaloriesBurned": 2.49 }}
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.253631, 46.979736]},"properties":{"place":"Restaurant Pilatus-Kulm 25/07/2020 - 8.253631, 46.979736 ", "elevation": 2070, "time":1598350830000, "HeartRate":111, "CaloriesBurned": 2.48 }},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.253867, 46.979795]},"properties":{"place":"Restaurant Pilatus-Kulm 25/07/2020 - 8.253867, 46.979795 ", "elevation": 2071, "time":1598350840000, "HeartRate":111, "CaloriesBurned": 2.48 }},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.254200, 46.979818]},"properties":{"place":"Restaurant Pilatus-Kulm 25/07/2020 - 8.254200, 46.979818 ", "elevation": 2071, "time":1598350850000, "HeartRate":112, "CaloriesBurned": 2.49 }}
 ]}
 
 
