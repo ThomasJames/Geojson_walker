@@ -1,5 +1,5 @@
 {"type":"FeatureCollection", "features": [
-{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250772, 46.982499]},"properties":{"place":"Klimsenkapelle 25/07/2020 - 8.250772, 46.982499 ", "elevation": 1867, "time":1598349720000, "HeartRate":100, "CaloriesBurned": 2.0, "elevationChange":00  }},
+{"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250772, 46.982499]},"properties":{"place":"Klimsenkapelle 25/07/2020 - 8.250772, 46.982499 ", "elevation": 1867, "time":1598349720000, "HeartRate":100, "CaloriesBurned": 2.0, "elevationChange":0  }},
 {"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250772, 46.982391]},"properties":{"place":"Klimsenkapelle 25/07/2020 - 8.250772, 46.982391 ", "elevation": 1868, "time":1598349730000, "HeartRate":101, "CaloriesBurned": 2.0, "elevationChange":12  }},
 {"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250802, 46.982291]},"properties":{"place":"Mount Pilatus 25/07/2020 - 8.250802, 46.982291 ", "elevation": 1869, "time":1598349740000, "HeartRate":108, "CaloriesBurned": 2.16, "elevationChange":1   }},
 {"type": "Feature", "geometry":{"type":"Point","coordinates":[8.250802, 46.982226]},"properties":{"place":"Mount Pilatus 25/07/2020 - 8.250802, 46.982226 ", "elevation": 1873, "time":1598349750000, "HeartRate":105, "CaloriesBurned": 2.10, "elevationChange":4   }},
